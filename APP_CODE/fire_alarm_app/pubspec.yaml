@@ -1,0 +1,39 @@
+name: fire_alarm_app
+description: 小区火灾报警系统手机APP - 用于显示传感器数据和用户交互
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # MQTT客户端
+  mqtt_client: ^10.0.0
+  
+  # 本地存储
+  shared_preferences: ^2.2.0
+  
+  # 状态管理
+  provider: ^6.0.0
+  
+  # 加密工具（用于密码哈希）
+  crypto: ^3.0.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # 属性测试
+  glados: ^1.1.1
+  
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
